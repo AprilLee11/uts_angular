@@ -1,0 +1,11 @@
+<ngx-loading *ngIf="loading"></ngx-loading>
+<div *ngIf="!loading" class="row">
+  <div class="col-sm-6">
+    <concept-brief [cui]="cui" [semanticType]="semanticType"></concept-brief>
+    <atom-list [atoms]="atomsList"></atom-list>
+  </div>
+  <div class="col-sm-6">
+    <div>Filter by RootSource</div>
+    <div>By Vocabulary</div>
+  </div>
+</div>

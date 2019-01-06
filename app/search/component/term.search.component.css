@@ -1,0 +1,66 @@
+.search-result {
+    /*float: left; */
+    margin-top: 10px;
+    margin-left:30px;
+    position: relative;
+  }
+  
+  .gsc-result-info {
+      text-align: left;
+      color: #999;
+      font-size: 12px;
+      padding-left: 8px;
+      margin: 10px 0 10px 0;
+    }
+    
+    .gs-result .gs-title,
+    .gs-result .gs-title * {
+      color: #1a0dab; /*#609*/
+      /*color: rgb(11, 25, 156);*/
+      font-size: 18px;
+      text-decoration: none;
+      /*font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+      /*font-family: "sans-serif, Arial";*/
+      font-family: 'Roboto', Arial, sans-serif;
+    }
+    
+    .gs-result a.gs-visibleUrl,
+    .gs-result .gs-visibleUrl {
+      font-size: 10px;
+      color: #0052FF;
+      text-decoration: none;
+    }
+    
+    .gs-result .gs-snippet {
+     /* font: 15px Tahoma, Geneva, sans-serif; */
+     font-family: arial,sans-serif;
+     font-size: 13px;
+     margin: 10px 10px 10px 30px
+    }
+    
+    .gsc-results .gsc-cursor-box .gsc-cursor-page {
+      cursor: pointer;
+      color: #07AD00;
+      text-decoration: none;
+      margin-right: 5px;
+      display: inline;
+      border: 1px solid #DDD;
+      padding: 2px 5px 2px 5px;
+    }
+    
+    /* enable using semantic list for results */
+    
+    ul.gsc-results {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      /*border-top: 1px solid #DDD;*/
+    }
+    
+    ul.gsc-results li {
+      /*border: 1px solid #DDD;*/
+      border-top-width: 0;
+      position: relative;
+      top: -1px;
+      padding: 2px 5px;
+    }

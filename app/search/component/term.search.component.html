@@ -1,0 +1,20 @@
+<div class="search-result" *ngIf="conceptsList?.length>0"
+  data-infinite-scroll
+  debounce
+  [infiniteScrollDistance]="scrollDistance"
+  [infiniteScrollUpDistance]="scrollUpDistance"
+  [infiniteScrollThrottle]="throttle"
+  (scrolled)="onScrollDown()"
+  (scrolledUp)="onUp()">
+
+
+      <ul class="gsc-results">
+        <li class="gs-result" *ngFor="let concept of conceptsList">
+            <div class="gs-title"><a [routerLink]="['cui', concept.ui]"> {{concept.name}} ({{concept.ui}}) </a> </div>
+            <div class="gs-snippet"><b>Vocabularies:</b> {{concept.rootSource}}</div>
+            <div class="gs-snippet"><b>Semantic Types:</b> {{concept.uri}}</div>
+            <div class="gs-snippet"><b>Definition:</b> {{concept.name}}</div>
+        </li>
+      </ul>
+</div>
+

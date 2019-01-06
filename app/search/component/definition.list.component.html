@@ -1,0 +1,31 @@
+<div>Definitions ({{definitions.length}})</div>
+<div *ngIf="definitions.length>0">
+    <table *ngIf="!showAllDefinitions">
+        <tr>
+          <th>Definition</th>
+          <th>Vocabulary</th>
+        </tr>
+        <tr>
+          <td align="left">{{definitions[0].value}}</td>
+          <td align="left">{{definitions[0].rootSource}}</td>
+        </tr>
+    </table>
+
+    <table *ngIf="showAllDefinitions">
+        <tr>
+          <th>Definition</th>
+          <th>Vocabulary</th>
+        </tr>
+        <tr *ngFor="let definition of definitions">
+          <td align="left">{{definition.value}}</td>
+          <td align="left">{{definition.rootSource}}</td>
+        </tr>
+    </table>
+</div>
+
+<div *ngIf="definitions.length>1">
+  <button (click)="showAllDefinitions = !showAllDefinitions"> 
+    {{showAllDefinitions ? 'Show Top' : 'Show All'}}
+  </button>
+</div>
+

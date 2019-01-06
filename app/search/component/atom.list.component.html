@@ -1,0 +1,33 @@
+<div>Atoms ({{filteredAtoms.length}})</div>
+<div>  Filter by Name : 
+  <input type='text' [(ngModel)]='listFilter' />
+</div>
+
+<div class="form-check">
+    <input type="checkbox" (click)="toggleAllContents()" class="form-check-input" id="allContentsCheck"  [(ngModel)]='allContents'>
+    <label class="form-check-label" for="allContentsCheck">Show Obsolete/Suppressible Content</label>
+</div>
+
+<div class="form-check">
+    <input type="checkbox" (click)="onClickMe()" class="form-check-input" id="allLanguagesCheck"  [(ngModel)]='allLanguages'>
+    <label class="form-check-label" for="allLanguagesCheck">Show All Languages</label>
+</div>
+
+<div>
+<table *ngIf="atoms.length>0">
+    <tr>
+      <th>Name</th>
+      <th>AUI</th>
+      <th>Vocabulary</th>
+      <th>Term</th>
+      <th>Code</th>
+    </tr>
+    <tr *ngFor="let atom of filteredAtoms">
+      <td align="left">{{atom.name}}</td>
+      <td align="left">{{atom.ui}}</td>
+      <td align="left">{{atom.rootSource}}</td>
+      <td align="left">{{atom.termType}}</td>      
+      <td align="left">{{atom.code.substring(atom.code.lastIndexOf("/")+1, atom.code.length)}}</td>
+   </tr>
+</table>
+</div>
