@@ -16,4 +16,4 @@ User Interface implemented with Angular
 - [How to compose your Angular application (I)](https://medium.com/@mikyung.lee11/how-to-compose-your-angular-application-i-e532fdbb7b4b)
 - [How to compose your Angular application (II)](https://medium.com/@mikyung.lee11/how-to-compose-angular-application-ii-df311f9d216f)
 
-* [PDF](https://github.com/AprilLee11/uts_front/blob/master/UTS-UI.pdf)
+* [PDF](https://github.com/AprilLee11/uts_angular/blob/master/UTS-UI.pdf)
